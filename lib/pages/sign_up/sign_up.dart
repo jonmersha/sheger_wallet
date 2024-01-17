@@ -44,17 +44,12 @@ class SignUpScreen extends StatelessWidget {
                     labelText: 'Confirm Password',
                     hintText: 'Please inter your password',
                     obscure:true),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 buttonWidget(
                   width: 325,
                     text:"Create Your accounts",
                     textColor: Colors.white,
-                    backColor:  Color.fromARGB(
-                        255, 15, 105, 175)),
-
-
-
-
+                    backColor:  const Color.fromARGB(255, 15, 105, 175)),
 
               ],
             ),

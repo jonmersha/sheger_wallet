@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sheger_wallet/commons/styling/box_decorations.dart';
 import 'package:sheger_wallet/commons/widgets/button-widget.dart';
 import 'package:sheger_wallet/commons/widgets/text_field_widget.dart';
 import 'package:sheger_wallet/commons/widgets/text_widget.dart';
@@ -71,18 +70,18 @@ class _LoginScreenState extends State<LoginScreen> {
                       text:"login",
                       function: signUp,
                       textColor: Colors.white,
-                      backColor:  Color.fromARGB(
+                      backColor:  const Color.fromARGB(
                       255, 6, 111, 58)),
 
               ],),
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
               buttonWidget(
                 width:360,
                   text:"Dint Have Account? Create",
                   textColor: Colors.black,
                   backColor:  Colors.black12
               ),
-              SizedBox(height: 50,),
+              const SizedBox(height: 50,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

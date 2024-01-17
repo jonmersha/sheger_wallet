@@ -18,7 +18,7 @@ Widget textField(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10)),),
          Padding(
-          padding: EdgeInsets.only(left: 20),
+          padding: const EdgeInsets.only(left: 20),
           child: textMediumNormal(
               text: labelText,
               size: 16,color:
