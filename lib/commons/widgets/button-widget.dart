@@ -9,12 +9,16 @@ Widget buttonWidget(
       double width=55,
       String text="label",
       Color textColor=Colors.white,
-      Color backColor=Colors.black
+      Color backColor=Colors.black,
+      void Function()? function
     }){
-  return Container(
-    width: width,
-    height: 50,
-    decoration: buttonDecorations(radius: 30,color:backColor ),
-    child: Center(child: textSmallNormal(text: text,color: textColor,size: 20)),
+  return GestureDetector(
+    onTap: function,
+    child: Container(
+      width: width,
+      height: 50,
+      decoration: buttonDecorations(radius: 30,color:backColor ),
+      child: Center(child: textSmallNormal(text: text,color: textColor,size: 20)),
+    ),
   );
 }

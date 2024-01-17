@@ -15,6 +15,12 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
+    void login(){
+
+    }
+    void signUp(){
+      Navigator.pushNamed(context, "/sign_up");
+    }
     return  SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
@@ -50,7 +56,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   labelText: 'Password',
                   hintText: 'Please inter your password',
                   obscure:true),
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -63,6 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   buttonWidget(
                     width: 120,
                       text:"login",
+                      function: signUp,
                       textColor: Colors.white,
                       backColor:  Color.fromARGB(
                       255, 6, 111, 58)),

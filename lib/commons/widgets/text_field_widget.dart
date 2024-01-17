@@ -15,7 +15,7 @@ Widget textField(
           margin: const EdgeInsets.only(top: 15),
           height: 45,
           decoration: BoxDecoration(
-              color: Colors.blue.shade50,
+              color: Colors.white,
               borderRadius: BorderRadius.circular(10)),),
          Padding(
           padding: EdgeInsets.only(left: 20),
